@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.sky{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/skybgm.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative
+    /* overflow-x: hidden; */
+}
+.r1{
+    height: 230px;
+    width: 500%;
+    display: block;
+    background-image: url(../images/road.jpg);
+    
+    position: absolute;
+    margin-top: 900px;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: road 5s linear infinite;
+}
+@keyframes road{
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+.r2{
+    height: 250px;
+    width: 500%;
+    position: absolute;
+    background-repeat: repeat-x;
+    background-image: url(../images/city.png);
+    margin-top: 650px;
+    z-index: 1;
+    display: block;
+    animation: bgm 5s linear infinite;
+}
+@keyframes bgm{
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+.car{
+    width: 600px;
+    left: 30%;
+    bottom: 100px;
+    transform: translateX(-100%);
+    position: absolute;
+    z-index: 2;
+    
+}
+.car img{
+    width: 100%;
+    animation: carm 3s linear infinite;
+}
+@keyframes carm {
+    100%{
+
+        transform: translateX(+1300px);
+
+    }
+}
+.car22{
+    width: 600px;
+    left: 85%;
+    bottom: 100px;
+    transform: translateX(-100%);
+    position: absolute;
+    z-index: 2;
+    
+}
+.car22 img{
+    width: 100%;
+    animation: carm1 5s linear ease;
+}
+@keyframes carm1 {
+    100%{
+
+        transform: translateX(+800px);
+
+    }
+}
+.car33{
+    width: 600px;
+    left: 50%;
+    bottom: 100px;
+    /* transform: translateX(-100%); */
+    position: absolute;
+    z-index: 2;
+    
+}
+.car33 img{
+    width: 100%;
+    animation: carm2 5s linear ease;
+}
+@keyframes carm2 {
+    100%{
+
+        transform: translatey(50px);
+
+    }
+}
+.car55{
+    width: 600px;
+    left: 90%;
+    
+    bottom: 100px;
+    /* transform: translateX(-100%); */
+    position: absolute;
+    z-index: 2;
+    margin-top: 50px;
+    
+}
+.car55 img{
+    width: 100%;
+    animation: carm2 5s linear ease;
+}
