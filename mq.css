@@ -1,0 +1,53 @@
+@media screen and (min-width :425px) and (max-width : 1800px) {
+    .navbar{
+    background-color: yellow;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    }
+   a{
+    text-decoration: none;
+    color: red;
+   }
+   }
+   @media screen and (min-width :0px) and (max-width : 425px) {
+    .navbar{
+    background-color: rgb(255, 0, 208);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    }
+   a{
+    text-decoration: none;
+    color: red;         
+   }
+   }
+   img{
+    border: 5px solid red;
+    padding: 10px;
+    background-color: black;
+    object-fit: cover;     
+     }
+    @media screen and (min-width : 400px) and (max-width : 700px) {
+        h1{
+            background-color: rgb(0, 255, 81);  
+        }    
+    }
+    @media screen and (min-width : 0px) and (max-width :399px) {
+        h1{
+            background-color: rgb(23, 0, 128);    
+        }   
+    }
+   @media screen {
+    .photos{
+    background-color: rgb(128, 128, 128);
+    border: 5px solid rgba(128, 128, 128, 0);
+    width: 465px;
+    
+   } img:hover{
+    background-color: rgb(102, 0, 255);
+   }
+   }
+   
+   
+   
