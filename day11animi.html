@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            
+            height: 770px;
+            width: 300px;
+            padding: 30px;
+            text-align: center;
+            background-color: rgba(211, 201, 201, 0.593);
+            /* margin-top: 1px; */
+            /* margin-left: -5px; */
+            /* margin-bottom: 1px; */
+            border: 10px solid grey;
+            
+        }
+        .sub{
+            background-color: grey;
+            /* border: 1px solid green; */
+            display: inline-block;
+            height: 20px;
+            width: 250px; 
+            
+            
+        }
+        .sub:hover{
+            background-color: red;
+        }
+        .para{
+            display: none;
+            position: absolute;
+            left: 300px;
+            top: 200px;
+            background-color: aqua;
+            color: black;
+            
+        }
+        .vs1:checked ~.para{
+            display: block;
+            transform:none ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        .vs2:checked ~.para{
+            display: block;
+            transform:scale(2,3) ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        .vs3:checked ~.para{
+            display: block;
+            transform:rotate(120deg) ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        .vs4:checked ~.para{
+            display: block;
+            transform:skew(40deg) ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        .vs5:checked ~.para{
+            display: block;
+            transform:scale(6,7) ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        .vs6:checked ~.para{
+            display: block;
+            transform:rotate(40deg) ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        .vs7:checked ~.para{
+            display: block;
+            transform:skew(40deg) ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        .vs8:checked ~.para{
+            display: block;
+            transform:scale(5,6) ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        .vs9:checked ~.para{
+            display: block;
+            transform:rotate(50deg) ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        .vs10:checked ~.para{
+            display: block;
+            transform:skew(50deg) ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        .vs11:checked ~.para{
+            display: block;
+            transform:scale(5,6) ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        .vs12:checked ~.para{
+            display: block;
+            transform:rotate(40deg) ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        .vs13:checked ~.para{
+            display: block;
+            transform:skew(40deg) ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        .vs14:checked ~.para{
+            display: block;
+            transform:scale(2,3) ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        .vs15:checked ~.para{
+            display: block;
+            transform:rotate(260deg) ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        .vs16:checked ~.para{
+            display: block;
+            transform:skew(140deg) ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        .vs17:checked ~.para{
+            display: block;
+            transform:scale(1,2) ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        .vs18:checked ~.para{
+            display: block;
+            transform:rotate(70deg) ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        .vs19:checked ~.para{
+            display: block;
+            transform:skew(10deg) ;
+            /* background-color: red; */
+            height: 50px;
+            width: 150px;
+            margin-left: 300px;
+        }
+        
+        .main6{
+            border: 20px grey solid; 
+        }
+       h4{
+        text-transform: capitalize;
+        text-decoration: underline;
+       }
+       h3{
+        background-color: yellow;
+        /* width: 500px; */
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <h3>Demo of the different values of the transform property.
+    </h3>
+    <h4> click the property valuesw below to see the result:</h4>
+    <div class="main6"><div class="main2">
+        <div class="main">
+            <input type="radio" name="transform" class="vs1">
+        <div class="sub">1transform none</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <br>
+        <br>
+        <input type="radio" name="transform" class="vs2">
+        <div class="sub">2transform scale</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <br>
+        <br>
+        <input type="radio" name="transform" class="vs3">
+        <div class="sub">3transform rotate</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <br>
+        <br>
+        <input type="radio" name="transform" class="vs4">
+        <div class="sub">4transform skew</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <br>
+        <br>
+        <input type="radio" name="transform" class="vs5">
+        <div class="sub">5transform scale1</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <br>
+        <br>
+        <input type="radio" name="transform" class="vs6">
+        <div class="sub">6transform rotate1</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <br>
+        <br>
+        <input type="radio" name="transform" class="vs7">
+        <div class="sub">7transform skew1</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <br>
+        <br>
+        <input type="radio" name="transform" class="vs8">
+        <div class="sub">8transform scale2</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <br>
+        <br>
+        <input type="radio" name="transform" class="vs9">
+        <div class="sub">9transform rotate2</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+    
+        <br>
+        <br>
+        <input type="radio" name="transform" class="vs10">
+        <div class="sub">10transform skew2</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <br>
+        <br>
+        <input type="radio" name="transform" class="vs11">
+        <div class="sub">11transform scale3</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <br>
+        <br>
+        <input type="radio" name="transform" class="vs12">
+        <div class="sub">12transform rotate3</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <br>
+        <br>
+        <input type="radio" name="transform" class="vs13">
+        <div class="sub">13transform skew3</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <br>
+        <br>
+        <input type="radio" name="transform" class="vs14">
+        <div class="sub">14transform scale4</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <br>
+        <br>
+        <input type="radio" name="transform" class="vs15">
+        <div class="sub">15transform rotate4</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <br>
+        <br>
+        <input type="radio" name="transform" class="vs16">
+        <div class="sub">16transform skew4</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <br>
+        <br>
+        <input type="radio" name="transform" class="vs17">
+        <div class="sub">17transform scale5</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <br>
+        <br>
+        <input type="radio" name="transform" class="vs18">
+        <div class="sub">18transform rotate5</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <br>
+        <br>
+        <input type="radio" name="transform" class="vs19">
+        <div class="sub">19transform skew5</div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur.
+        </div>
+    
+    
+        </div>
+    </div>
+</div>
+</body>
+</html>
