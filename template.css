@@ -1,0 +1,132 @@
+/* 1.template page */
+/* text on image */
+.imgtxt{
+    background-color: rgba(0, 0, 0, 0.639);
+    display: inline;
+    color: white;
+    position: absolute;
+    top: 250px;
+    left: 800px;
+    border-radius: 10%;
+    opacity: 0.8;
+  }
+  /* 2.about page */
+  .txtafphoto{
+    text-align: center;
+    opacity: 0.9;
+  }
+  .txtafphoto h1{
+    background-color: aquamarine;
+    display: inline-block;
+    margin-top: 10px;
+    border: 1px solid greenyellow;
+    border-radius: 10px;
+  }
+  /* photography paragraph */
+  .para1{
+    border: 1px solid white;
+    width: 1000px;
+    height: 200px;
+    margin-left: 290px;
+    opacity: 0.8;
+    
+  }
+  /* myself para */
+  .img2{
+    margin-top: 10px;
+    margin-left: 5px;
+    opacity: 0.9;
+  }
+  .myself{
+    /* border: 1px solid red; */
+    width:700px;
+    height: 400px;
+    margin-left:390px;
+    opacity: 0.5;
+  }
+  .myself:hover{
+    opacity: 1;
+  }
+  .para2{
+    border: 1px solid transparent;
+    width: 250px;
+    height: 380px;
+    position: absolute;
+    top: 450px;
+    left: 840px;
+    opacity: 0.9;
+   }
+   /*progress bar */
+   .container{
+    width: 750px;
+   }
+
+   
+   /* div p{
+    background-color: chartreuse;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border:1px solid red;
+    opacity: 0.8;
+    border-radius: 8px;
+   } */
+   
+   /* 3.portfolio page */
+   .porttext{
+    position: absolute;
+    top: 220px;
+    left: 45%;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   .mainport{
+    opacity: 0.8;
+   }
+   .mainport:hover{
+    opacity: 1;
+   }
+   /* work */
+   .work{
+    text-align: center;
+   }
+   .work h1{
+    background-color: greenyellow;
+    display: inline-block;
+    border: 1px solid violet;
+    border-radius: 10px;
+   }
+   .work p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: bisque;
+    display: inline-block;
+    border: solid 1px red;
+    border-radius: 10px;
+   }
+   /* 4.contact page */
+
+   /* footer for all */
+   
+   .footerforall{
+    position: absolute;
+    left: 0px;
+    width: 1520px;
+    height: 100px;
+    text-align: center;
+    background-color: gray;
+    font-size: xx-large;
+      }
+
+      .down{
+        position: absolute;
+        left: 715px;
+        top: 70px;
+        text-decoration: none;
+        color: black;
+        background-color: black;
+        color: white;
+        border: 1px solid beige;
+        padding: 3px;
+        opacity: 0.6;
+       }
